@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'QanelasEB';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'QanelasEB';
+  font-weight: 700;
+  font-style: italic;
+  src: url('./ExtraBoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'QanelasSB';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'QanelasSB';
+  font-weight: 400;
+  font-style: italic;
+  src: url('./SemiBoldItalic.ttf');
+}
