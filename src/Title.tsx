@@ -33,8 +33,8 @@ export default function Title({scale = 1}: TitleProps) {
       </Grid>
       <Grid item xs={2}>
         <Typography
-          style={{fontSize: `${8.7 * scale}vw`, textAlign: 'center'}}
-          variant="h2"
+          style={{fontSize: `${8.7 * 1}vw`, textAlign: 'center'}}
+          variant="subtitle1"
         >
           JEBIKOH
         </Typography>

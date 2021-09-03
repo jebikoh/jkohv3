@@ -21,6 +21,10 @@ const theme = createTheme({
     accent: {
       main: '#D6D5D5',
     },
+    background: {
+      default: '#FFFFFF',
+      paper: '#FFFAFA',
+    },
   },
   typography: {
     fontFamily: [
@@ -49,7 +53,16 @@ const theme = createTheme({
       writingMode: 'vertical-rl',
       textOrientation: 'sideways',
       fontSize: '15vw',
-      lineHeight: '1em',
+      lineHeight: '2.5em',
+    },
+    subtitle1: {
+      fontFamily: 'QanelasEB',
+      color: '#D6D5D5',
+      transform: 'rotate(-180deg)',
+      writingMode: 'vertical-rl',
+      textOrientation: 'sideways',
+      fontSize: '15vw',
+      lineHeight: '2.5em',
     },
   },
   components: {
@@ -71,6 +84,19 @@ const theme = createTheme({
         disableRipple: true,
       },
     },
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#FFFFFF',
+        },
+      },
+      defaultProps: {
+        elevation: 0,
+      },
+    },
+    // MuiToolbar: {
+    //   styleOver
+    // }
   },
 });
 

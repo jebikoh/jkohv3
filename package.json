@@ -5,9 +5,11 @@
   "dependencies": {
     "@emotion/cache": "latest",
     "@emotion/react": "latest",
-    "@emotion/styled": "latest",
     "@emotion/server": "latest",
+    "@emotion/styled": "latest",
     "@material-ui/core": "next",
+    "@material-ui/icons": "next",
+    "@material-ui/styles": "next",
     "clsx": "latest",
     "next": "latest",
     "react": "latest",
@@ -20,16 +22,13 @@
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "tsc",
-    "fix": "gts fix",
-    "prepare": "yarn.cmd run compile",
-    "pretest": "yarn.cmd run compile",
-    "posttest": "yarn.cmd run lint"
+    "fix": "gts fix"
   },
   "devDependencies": {
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "typescript": "latest",
-    "gts": "^3.1.0"
+    "gts": "^3.1.0",
+    "typescript": "latest"
   }
 }
