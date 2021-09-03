@@ -94,9 +94,11 @@ const theme = createTheme({
         elevation: 0,
       },
     },
-    // MuiToolbar: {
-    //   styleOver
-    // }
+    MuiIconButton: {
+      defaultProps: {
+        color: 'primary',
+      },
+    },
   },
 });
 
