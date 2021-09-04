@@ -64,16 +64,13 @@ const theme = createTheme({
           ':hover': {
             color: '#202020',
           },
+          padding: '0',
+          fontSize: '6vw',
         },
       },
       defaultProps: {
         disableRipple: true,
-      },
-    },
-    MuiButtonGroup: {
-      styleOverrides: {},
-      defaultProps: {
-        disableRipple: true,
+        color: 'secondary',
       },
     },
     MuiAppBar: {

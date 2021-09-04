@@ -4,6 +4,7 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Avatar from '@mui/material/Avatar';
+import Button from '@mui/material/Button';
 import Chevron from '@mui/icons-material/KeyboardArrowDown';
 // Homemade
 import Title from '../src/Title';
@@ -24,7 +25,6 @@ export default function Index() {
           transform: 'translate(-50%, -50%)',
         }}
       >
-        {/* <Box sx={{my: 4}}> */}
         <Grid
           container
           spacing={8}
@@ -39,12 +39,29 @@ export default function Index() {
                 width: '30vw',
                 height: '30vw',
               }}
-            >
-              J
-            </Avatar>
+              src="https://pbs.twimg.com/profile_images/1348803136740319234/As5ktbgz_400x400.jpg"
+            />
+            {/* J
+            </Avatar> */}
           </Grid>
           <Grid item>
             <Title />
+            <Grid
+              container
+              direction="row"
+              justifyContent="space-between"
+              alignItems="center"
+            >
+              <Grid item>
+                <Button>About</Button>
+              </Grid>
+              <Grid item>
+                <Button>Portfolio</Button>
+              </Grid>
+              <Grid item>
+                <Button>Contact</Button>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Container>
