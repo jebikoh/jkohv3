@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 
 interface TitleProps {
   scale?: number;
@@ -10,12 +10,12 @@ export default function Title({scale = 1}: TitleProps) {
   return (
     <Grid
       container
-      spacing={2}
+      spacing={1}
       direction="row"
       justifyContent="center"
       alignItems="center"
     >
-      <Grid item xs={10}>
+      <Grid item>
         <Typography
           style={{fontSize: `${22 * scale}vw`}}
           variant="h1"
@@ -31,9 +31,13 @@ export default function Title({scale = 1}: TitleProps) {
           EDARA
         </Typography>
       </Grid>
-      <Grid item xs={2}>
+      <Grid item>
         <Typography
-          style={{fontSize: `${8.7 * 1}vw`, textAlign: 'center'}}
+          style={{
+            fontSize: `${8.7 * scale}vw`,
+            textAlign: 'center',
+            lineHeight: `${7.75 * scale}vw}`,
+          }}
           variant="subtitle1"
         >
           JEBIKOH

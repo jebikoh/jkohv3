@@ -1,9 +1,10 @@
 import * as React from 'react';
 // MUI Components
-import Container from '@material-ui/core/Container';
-// import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import Avatar from '@material-ui/core/Avatar';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Avatar from '@mui/material/Avatar';
+import Chevron from '@mui/icons-material/KeyboardArrowDown';
 // Homemade
 import Title from '../src/Title';
 import Navbar from '../src/Navbar';
@@ -11,8 +12,9 @@ import theme from '../src/theme';
 
 export default function Index() {
   return (
-    <>
+    <Box sx={{height: '100vh'}}>
       <Navbar />
+      <Chevron />
       <Container
         maxWidth="sm"
         style={{
@@ -25,7 +27,7 @@ export default function Index() {
         {/* <Box sx={{my: 4}}> */}
         <Grid
           container
-          spacing={5}
+          spacing={8}
           direction="column"
           alignItems="center"
           justifyContent="center"
@@ -45,8 +47,7 @@ export default function Index() {
             <Title />
           </Grid>
         </Grid>
-        {/* </Box> */}
       </Container>
-    </>
+    </Box>
   );
 }

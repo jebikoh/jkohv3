@@ -1,33 +1,28 @@
 import * as React from 'react';
 // MUI
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import {Theme, createStyles, makeStyles} from '@material-ui/core/styles';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Box from '@mui/material/Box';
 // Icons
-import TwitterIcon from '@material-ui/icons/Twitter';
-import GithubIcon from '@material-ui/icons/Github';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GithubIcon from '@mui/icons-material/Github';
+interface NavbarProps {
+  height?: string;
+}
 
-// const useStyles = makeStyles((theme: Theme) =>
-//   createStyles({
-//     menuButton: {
-//       marginRight: theme.spacing(2),
-//     },
-//   })
-// );
-
-export default function Navbar() {
-  // const classes = useStyles();
-
+export default function Navbar({height = '5vh'}: NavbarProps) {
   return (
-    <AppBar position="fixed">
+    <AppBar style={{height: height}} position="fixed">
       <Toolbar>
-        <IconButton aria-label="Twitter">
-          <TwitterIcon />
-        </IconButton>
-        <IconButton aria-label="Github">
-          <GithubIcon />
-        </IconButton>
+        <Box marginLeft="auto">
+          <IconButton aria-label="Twitter">
+            <TwitterIcon />
+          </IconButton>
+          <IconButton aria-label="Github">
+            <GithubIcon />
+          </IconButton>
+        </Box>
       </Toolbar>
     </AppBar>
   );

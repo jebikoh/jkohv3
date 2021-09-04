@@ -1,6 +1,6 @@
-import {createTheme} from '@material-ui/core/styles';
+import {createTheme} from '@mui/material/styles';
 
-declare module '@material-ui/core/styles/createPalette' {
+declare module '@mui/material/styles/createPalette' {
   interface Palette {
     accent: Palette['primary'];
   }
@@ -11,6 +11,7 @@ declare module '@material-ui/core/styles/createPalette' {
 
 // Create a theme instance.
 const theme = createTheme({
+  spacing: 4,
   palette: {
     primary: {
       main: '#202020',
@@ -46,23 +47,14 @@ const theme = createTheme({
       lineHeight: '75%',
       fontSize: '22vw',
     },
-    h2: {
-      fontFamily: 'QanelasEB',
-      color: '#D6D5D5',
-      transform: 'rotate(-180deg)',
-      writingMode: 'vertical-rl',
-      textOrientation: 'sideways',
-      fontSize: '15vw',
-      lineHeight: '2.5em',
-    },
     subtitle1: {
       fontFamily: 'QanelasEB',
       color: '#D6D5D5',
       transform: 'rotate(-180deg)',
       writingMode: 'vertical-rl',
       textOrientation: 'sideways',
-      fontSize: '15vw',
-      lineHeight: '2.5em',
+      fontSize: '8.7vw',
+      lineHeight: '7.5vw',
     },
   },
   components: {
