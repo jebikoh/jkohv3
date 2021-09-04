@@ -16,10 +16,10 @@ export default function Navbar({height = '5vh'}: NavbarProps) {
     <AppBar style={{height: height}} position="fixed">
       <Toolbar>
         <Box marginLeft="auto">
-          <IconButton aria-label="Twitter">
+          <IconButton aria-label="Twitter" href="https://twitter.com/jebikoh">
             <TwitterIcon />
           </IconButton>
-          <IconButton aria-label="Github">
+          <IconButton aria-label="Github" href="https://github.com/jebikoh">
             <GithubIcon />
           </IconButton>
         </Box>

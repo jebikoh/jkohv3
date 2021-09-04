@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
 import Chevron from '@mui/icons-material/KeyboardArrowDown';
 // Homemade
 import Title from '../src/Title';
@@ -15,7 +16,6 @@ export default function Index() {
   return (
     <Box sx={{height: '100vh'}}>
       <Navbar />
-      <Chevron />
       <Container
         maxWidth="sm"
         style={{
@@ -41,8 +41,6 @@ export default function Index() {
               }}
               src="https://pbs.twimg.com/profile_images/1348803136740319234/As5ktbgz_400x400.jpg"
             />
-            {/* J
-            </Avatar> */}
           </Grid>
           <Grid item>
             <Title />
@@ -64,6 +62,13 @@ export default function Index() {
             </Grid>
           </Grid>
         </Grid>
+      </Container>
+      <Container
+        style={{position: 'absolute', bottom: '2vh', textAlign: 'center'}}
+      >
+        <IconButton size="large" aria-label="scroll-down">
+          <Chevron fontSize="large" />
+        </IconButton>
       </Container>
     </Box>
   );

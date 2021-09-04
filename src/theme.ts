@@ -84,8 +84,16 @@ const theme = createTheme({
       },
     },
     MuiIconButton: {
+      styleOverrides: {
+        root: {
+          ':hover': {
+            color: '#202020',
+          },
+        },
+      },
       defaultProps: {
-        color: 'primary',
+        color: 'secondary',
+        disableRipple: true,
       },
     },
   },
