@@ -42,10 +42,17 @@ const theme = createTheme({
       '"Segoe UI Symbol"',
     ].join(','),
     h1: {
+      color: '#202020',
       fontFamily: 'QanelasEB',
       fontStyle: 'italic',
       lineHeight: '75%',
       fontSize: '22vw',
+    },
+    h2: {
+      fontFamily: 'QanelasEB',
+      color: '#202020',
+      fontStyle: 'italic',
+      fontSize: '10vw',
     },
     subtitle1: {
       fontFamily: 'QanelasEB',
@@ -55,6 +62,13 @@ const theme = createTheme({
       textOrientation: 'sideways',
       fontSize: '8.7vw',
       lineHeight: '7.5vw',
+    },
+    body1: {
+      color: '#8F8F8F',
+      fontSize: '4.5vw',
+      lineHeight: '5vw',
+      textAlign: 'justify',
+      textJustify: 'inter-word',
     },
   },
   components: {
