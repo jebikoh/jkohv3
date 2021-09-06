@@ -68,7 +68,7 @@ const theme = createTheme({
       fontSize: '4.5vw',
       lineHeight: '5vw',
       textAlign: 'justify',
-      textJustify: 'inter-word',
+      textJustify: 'inter-character',
     },
   },
   components: {
