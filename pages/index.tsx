@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <>
       <Landing />
-      {/* <About /> */}
+      <About />
     </>
   );
 }

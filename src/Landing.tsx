@@ -13,7 +13,7 @@ import Chevron from './Chevron';
 
 export default function Landing() {
   return (
-    <Box sx={{height: '100vh'}}>
+    <Box sx={{height: '100vh', position: 'relative'}}>
       <Navbar />
       <Container
         maxWidth="sm"

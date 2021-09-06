@@ -10,7 +10,7 @@ import theme from './theme';
 
 export default function About() {
   return (
-    <Box sx={{height: '100vh'}}>
+    <Box sx={{height: '100vh', position: 'relative'}}>
       <Container
         maxWidth="sm"
         style={{
