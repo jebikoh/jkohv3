@@ -1,4 +1,5 @@
 import {createTheme} from '@mui/material/styles';
+import {ReactText} from 'react';
 
 declare module '@mui/material/styles/createPalette' {
   interface Palette {
@@ -108,6 +109,30 @@ const theme = createTheme({
       defaultProps: {
         color: 'secondary',
         disableRipple: true,
+      },
+    },
+    MuiListItemButton: {
+      styleOverrides: {
+        root: {
+          ':hover': {
+            backgroundColor: '#FFFFFF',
+          },
+          padding: 0,
+        },
+      },
+      defaultProps: {
+        disableRipple: true,
+      },
+    },
+    MuiListItemText: {
+      defaultProps: {
+        primaryTypographyProps: {
+          fontSize: '6vw',
+        },
+        secondaryTypographyProps: {
+          fontSize: '6vw',
+          fontStyle: 'italic',
+        },
       },
     },
   },

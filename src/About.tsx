@@ -5,9 +5,9 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 // Homemade
-import Chevron from './Chevron';
+import Chevron from './Components/Chevron';
 import theme from './theme';
-import Section from './Section';
+import Section from './Components/Section';
 
 export default function About() {
   return (

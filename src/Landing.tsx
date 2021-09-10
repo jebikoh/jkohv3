@@ -6,10 +6,10 @@ import Grid from '@mui/material/Grid';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 // Homemade
-import Title from '../src/Title';
-import Navbar from '../src/Navbar';
+import Title from './Components/Title';
+import Navbar from './Components/Navbar';
 import theme from '../src/theme';
-import Chevron from './Chevron';
+import Chevron from './Components/Chevron';
 
 export default function Landing() {
   return (

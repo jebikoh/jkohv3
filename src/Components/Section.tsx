@@ -1,5 +1,5 @@
 import * as React from 'react';
-import theme from './theme';
+import theme from '../theme';
 import Chevron from './Chevron';
 // MUI
 import Box from '@mui/material/Box';
