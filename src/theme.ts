@@ -1,6 +1,4 @@
 import {createTheme} from '@mui/material/styles';
-import {ReactText} from 'react';
-
 declare module '@mui/material/styles/createPalette' {
   interface Palette {
     accent: Palette['primary'];
@@ -54,6 +52,11 @@ const theme = createTheme({
       color: '#202020',
       fontStyle: 'italic',
       fontSize: '10vw',
+    },
+    h3: {
+      color: '#8F8F8F',
+      fontStyle: 'italic',
+      fontSize: '6vw',
     },
     subtitle1: {
       fontFamily: 'QanelasEB',
@@ -133,6 +136,20 @@ const theme = createTheme({
           fontSize: '6vw',
           fontStyle: 'italic',
         },
+      },
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: '#D6D5D5',
+          fontSize: '4.5vw',
+          ':hover': {
+            color: '#8F8F8F',
+          },
+        },
+      },
+      defaultProps: {
+        underline: 'none',
       },
     },
   },

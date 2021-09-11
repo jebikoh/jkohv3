@@ -5,6 +5,9 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 import {styled} from '@mui/material/styles';
+// Icons
+import ChevronDown from '@mui/icons-material/KeyboardArrowDown';
+import ChevronLeft from '@mui/icons-material/KeyboardArrowLeft';
 //
 import theme from '../theme';
 import Project from './Project';
@@ -39,19 +42,25 @@ export default function ProjectList({header, projects}: ProjectListProps) {
   return (
     <>
       <List>
-        <ListItemButton onClick={handleClick}>
+        <ListItemButton sx={{textAlign: 'left'}} onClick={handleClick}>
           {!open ? (
-            <ProjectItemText disableTypography>{header}</ProjectItemText>
+            <>
+              <ProjectItemText disableTypography>{header}</ProjectItemText>
+              <ChevronDown sx={{fontSize: '8vw'}} />
+            </>
           ) : (
-            <ProjectItemText disableTypography sx={{fontStyle: 'italic'}}>
-              {header}
-            </ProjectItemText>
+            <>
+              <ProjectItemText disableTypography sx={{fontStyle: 'italic'}}>
+                {header}
+              </ProjectItemText>
+              <ChevronLeft />
+            </>
           )}
         </ListItemButton>
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List disablePadding sx={{paddingLeft: theme.spacing(4)}}>
             {projects.map(project => (
-              <ListItemButton href={project.link}>
+              <ListItemButton component="a" href={project.link}>
                 <ProjectSubItemText disableTypography>
                   {project.name}
                 </ProjectSubItemText>

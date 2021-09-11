@@ -6,6 +6,12 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 //
 import ProjectList from './Components/ProjectList';
+import Project from './Components/Project';
+import projects from './../projects.json';
+
+const projectList: {
+  [index: string]: Project[];
+} = projects;
 
 export default function Projects() {
   return (
@@ -22,13 +28,19 @@ export default function Projects() {
           </Typography>
         </Grid>
         <Grid>
-          <ProjectList />
+          <ProjectList
+            header="PROFESSIONAL"
+            projects={projectList['primary']}
+          />
         </Grid>
         <Grid>
-          <Button>RECREATIONAL</Button>
+          <ProjectList
+            header="RECREATIONAL"
+            projects={projectList['recreational']}
+          />
         </Grid>
         <Grid>
-          <Button>PERSONAL</Button>
+          <ProjectList header="PESRONAL" projects={projectList['personal']} />
         </Grid>
       </Grid>
     </Section>

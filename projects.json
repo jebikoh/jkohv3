@@ -1,46 +1,44 @@
 {
-  "projects": {
-    "recreational": [
-      {
-        "name": "Project 1",
-        "link": "https://github.com/Jebikoh"
-      },
-      {
-        "name": "Project 1",
-        "link": "https://github.com/Jebikoh"
-      },
-      {
-        "name": "Project 1",
-        "link": "https://github.com/Jebikoh"
-      }
-    ],
-    "primary": [
-      {
-        "name": "Project 1",
-        "link": "https://github.com/Jebikoh"
-      },
-      {
-        "name": "Project 1",
-        "link": "https://github.com/Jebikoh"
-      },
-      {
-        "name": "Project 1",
-        "link": "https://github.com/Jebikoh"
-      }
-    ],
-    "personal": [
-      {
-        "name": "Project 1",
-        "link": "https://github.com/Jebikoh"
-      },
-      {
-        "name": "Project 1",
-        "link": "https://github.com/Jebikoh"
-      },
-      {
-        "name": "Project 1",
-        "link": "https://github.com/Jebikoh"
-      }
-    ]
-  }
+  "recreational": [
+    {
+      "name": "Project 1",
+      "link": "https://github.com/Jebikoh"
+    },
+    {
+      "name": "Project 1",
+      "link": "https://github.com/Jebikoh"
+    },
+    {
+      "name": "Project 1",
+      "link": "https://github.com/Jebikoh"
+    }
+  ],
+  "primary": [
+    {
+      "name": "Project 1",
+      "link": "https://github.com/Jebikoh"
+    },
+    {
+      "name": "Project 1",
+      "link": "https://github.com/Jebikoh"
+    },
+    {
+      "name": "Project 1",
+      "link": "https://github.com/Jebikoh"
+    }
+  ],
+  "personal": [
+    {
+      "name": "Project 1",
+      "link": "https://github.com/Jebikoh"
+    },
+    {
+      "name": "Project 1",
+      "link": "https://github.com/Jebikoh"
+    },
+    {
+      "name": "Project 1",
+      "link": "https://github.com/Jebikoh"
+    }
+  ]
 }
