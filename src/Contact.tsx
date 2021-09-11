@@ -9,7 +9,7 @@ import Section from './Components/Section';
 
 export default function Contact() {
   return (
-    <Section bottomChevron={false}>
+    <Section upChevron={true}>
       <Grid container alignItems="center" spacing={1}>
         <Grid>
           <Typography variant="h2">CONTACT</Typography>

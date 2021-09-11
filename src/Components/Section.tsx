@@ -1,25 +1,28 @@
 import * as React from 'react';
-import theme from '../theme';
-import Chevron from './Chevron';
 // MUI
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+//
+import DownChevron from './DownChevron';
+import UpChevron from './UpChevron';
+import theme from '../theme';
 
 interface Props {
   children: React.ReactNode;
-  bottomChevron?: boolean;
-  topChevron?: boolean;
+  downChevron?: boolean;
+  downChevronHref?: string;
+  upChevron?: boolean;
+  upChevronhref?: string;
 }
 
 export default function SectionContainer({
   children,
-  bottomChevron = false,
-  topChevron = false,
+  downChevron = false,
+  upChevron = false,
 }: Props) {
   return (
     <Box sx={{height: '100vh', position: 'relative'}}>
-      {/* Change to top chevron component when created */}
-      {topChevron && <Chevron />}
+      {upChevron && <UpChevron />}
       <Container
         maxWidth="sm"
         style={{
@@ -32,7 +35,7 @@ export default function SectionContainer({
       >
         {children}
       </Container>
-      {bottomChevron && <Chevron />}
+      {downChevron && <DownChevron />}
     </Box>
   );
 }

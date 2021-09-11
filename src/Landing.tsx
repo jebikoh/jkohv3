@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import Title from './Components/Title';
 import Navbar from './Components/Navbar';
 import theme from '../src/theme';
-import Chevron from './Components/Chevron';
+import Chevron from './Components/DownChevron';
 
 export default function Landing() {
   return (

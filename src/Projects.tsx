@@ -3,7 +3,6 @@ import Section from './Components/Section';
 // MUI
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 //
 import ProjectList from './Components/ProjectList';
 import Project from './Components/Project';
@@ -15,7 +14,7 @@ const projectList: {
 
 export default function Projects() {
   return (
-    <Section bottomChevron={true}>
+    <Section downChevron={true}>
       <Grid container direction="column">
         <Grid>
           <Typography variant="h2">PROJECTS</Typography>

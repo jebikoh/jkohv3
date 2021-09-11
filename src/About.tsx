@@ -1,17 +1,14 @@
 import * as React from 'react';
 // MUI
-import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 // Homemade
-import Chevron from './Components/Chevron';
 import theme from './theme';
 import Section from './Components/Section';
 
 export default function About() {
   return (
-    <Section bottomChevron={true}>
+    <Section downChevron={true}>
       <Grid container>
         <Grid>
           <Typography variant="h2">ABOUT ME</Typography>
