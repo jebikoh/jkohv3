@@ -8,7 +8,7 @@ import Section from './Components/Section';
 
 export default function About() {
   return (
-    <Section downChevron={true}>
+    <Section id="about" downChevron={true} downChevronTo="projects">
       <Grid container>
         <Grid>
           <Typography variant="h2">ABOUT ME</Typography>

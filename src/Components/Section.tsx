@@ -9,33 +9,39 @@ import theme from '../theme';
 
 interface Props {
   children: React.ReactNode;
+  id: string;
   downChevron?: boolean;
-  downChevronHref?: string;
+  downChevronTo?: string;
   upChevron?: boolean;
-  upChevronhref?: string;
+  upChevronTo?: string;
 }
 
 export default function SectionContainer({
   children,
+  id,
   downChevron = false,
+  downChevronTo = '',
   upChevron = false,
+  upChevronTo = '',
 }: Props) {
   return (
-    <Box sx={{height: '100vh', position: 'relative'}}>
-      {upChevron && <UpChevron />}
-      <Container
-        maxWidth="sm"
-        style={{
-          position: 'absolute',
-          left: '50%',
-          top: '50%',
-          transform: 'translate(-50%, -50%)',
-          padding: theme.spacing(8),
-        }}
-      >
-        {children}
-      </Container>
-      {downChevron && <DownChevron />}
-    </Box>
+    <div id={id}>
+      <Box sx={{height: '100vh', position: 'relative'}}>
+        {upChevron && <UpChevron to={upChevronTo} />}
+        <Container
+          maxWidth="sm"
+          style={{
+            position: 'absolute',
+            left: '50%',
+            top: '50%',
+            transform: 'translate(-50%, -50%)',
+            padding: theme.spacing(8),
+          }}
+        >
+          {children}
+        </Container>
+        {downChevron && <DownChevron to={downChevronTo} />}
+      </Box>
+    </div>
   );
 }

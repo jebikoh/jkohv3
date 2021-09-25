@@ -3,15 +3,23 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import IconButton from '@mui/material/IconButton';
 import ChevronIcon from '@mui/icons-material/KeyboardArrowDown';
+//
+import SmoothScrollButton from './SmoothScrollButton';
 
-export default function Chevron() {
+interface Props {
+  to: string;
+}
+
+export default function DownChevron({to}: Props) {
   return (
     <Container
       style={{position: 'absolute', bottom: '2vh', textAlign: 'center'}}
     >
-      <IconButton size="large" aria-label="scroll-down">
-        <ChevronIcon fontSize="large" />
-      </IconButton>
+      <SmoothScrollButton to={to}>
+        <IconButton size="large" aria-label="scroll-down">
+          <ChevronIcon fontSize="large" />
+        </IconButton>
+      </SmoothScrollButton>
     </Container>
   );
 }

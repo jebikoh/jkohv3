@@ -9,10 +9,12 @@
     "@emotion/styled": "latest",
     "@mui/icons-material": "^5.0.0-rc.0",
     "@mui/material": "^5.0.0-rc.0",
+    "@types/react-scroll": "^1.8.3",
     "clsx": "latest",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-scroll": "^1.8.4"
   },
   "scripts": {
     "dev": "next",

@@ -14,7 +14,7 @@ const projectList: {
 
 export default function Projects() {
   return (
-    <Section downChevron={true}>
+    <Section id="projects" downChevron={true} downChevronTo="contact">
       <Grid container direction="column">
         <Grid>
           <Typography variant="h2">PROJECTS</Typography>
