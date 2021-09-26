@@ -121,6 +121,13 @@ const theme = createTheme({
         elevation: 0,
       },
     },
+    MuiToolbar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: forerunner.palette.background.default,
+        },
+      },
+    },
     MuiIconButton: {
       styleOverrides: {
         root: {
