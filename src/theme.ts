@@ -1,4 +1,6 @@
 import {createTheme} from '@mui/material/styles';
+
+// Module augmentation to add accent color tone
 declare module '@mui/material/styles/createPalette' {
   interface Palette {
     accent: Palette['primary'];
@@ -8,9 +10,18 @@ declare module '@mui/material/styles/createPalette' {
   }
 }
 
-// Create a theme instance.
-const theme = createTheme({
-  spacing: 4,
+// Theme can't reference itself
+// Using this object makes editing constants across overrides easier
+const forerunner = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 400,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
   palette: {
     primary: {
       main: '#202020',
@@ -26,6 +37,15 @@ const theme = createTheme({
       paper: '#FFFAFA',
     },
   },
+});
+
+// Create a theme instance.
+const theme = createTheme({
+  spacing: 4,
+  breakpoints: {
+    values: forerunner.breakpoints?.values,
+  },
+  palette: forerunner.palette,
   typography: {
     fontFamily: [
       'QanelasSB',
@@ -41,7 +61,7 @@ const theme = createTheme({
       '"Segoe UI Symbol"',
     ].join(','),
     h1: {
-      color: '#202020',
+      color: forerunner.palette.primary.main,
       fontFamily: 'QanelasEB',
       fontStyle: 'italic',
       lineHeight: '75%',
@@ -49,18 +69,18 @@ const theme = createTheme({
     },
     h2: {
       fontFamily: 'QanelasEB',
-      color: '#202020',
+      color: forerunner.palette.primary.main,
       fontStyle: 'italic',
       fontSize: '10vw',
     },
     h3: {
-      color: '#8F8F8F',
+      color: forerunner.palette.secondary.main,
       fontStyle: 'italic',
       fontSize: '6vw',
     },
     subtitle1: {
       fontFamily: 'QanelasEB',
-      color: '#D6D5D5',
+      color: forerunner.palette.accent.main,
       transform: 'rotate(-180deg)',
       writingMode: 'vertical-rl',
       textOrientation: 'sideways',
@@ -68,7 +88,7 @@ const theme = createTheme({
       lineHeight: '7.5vw',
     },
     body1: {
-      color: '#8F8F8F',
+      color: forerunner.palette.secondary.main,
       fontSize: '4.5vw',
       lineHeight: '5vw',
       textAlign: 'justify',
@@ -80,7 +100,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           ':hover': {
-            color: '#202020',
+            color: forerunner.palette.primary.main,
           },
           padding: '0',
           fontSize: '6vw',
@@ -94,7 +114,7 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: '#FFFFFF',
+          backgroundColor: forerunner.palette.background.default,
         },
       },
       defaultProps: {
@@ -105,7 +125,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           ':hover': {
-            color: '#202020',
+            color: forerunner.palette.primary.main,
           },
         },
       },
@@ -118,7 +138,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           ':hover': {
-            backgroundColor: '#FFFFFF',
+            backgroundColor: forerunner.palette.background.default,
           },
           padding: 0,
         },
@@ -141,10 +161,10 @@ const theme = createTheme({
     MuiLink: {
       styleOverrides: {
         root: {
-          color: '#D6D5D5',
+          color: forerunner.palette.accent.main,
           fontSize: '4.5vw',
           ':hover': {
-            color: '#8F8F8F',
+            color: forerunner.palette.secondary.main,
           },
         },
       },

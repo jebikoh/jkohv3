@@ -11,7 +11,7 @@ interface Props {
 
 export default function UpChevron({to}: Props) {
   return (
-    <Container style={{position: 'absolute', top: '4vh', textAlign: 'center'}}>
+    <Container style={{position: 'absolute', top: '5vh', textAlign: 'center'}}>
       <SmoothScrollButton to={to}>
         <IconButton size="large" aria-label="scroll-down">
           <ChevronIcon fontSize="large" />
