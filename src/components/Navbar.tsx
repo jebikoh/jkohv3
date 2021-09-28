@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Box from '@mui/material/Box';
 // Icons
 import Twitter from '@mui/icons-material/Twitter';
-import Github from '@mui/icons-material/Github';
+// import Github from '@mui/icons-material/Github';
 interface NavbarProps {
   height?: string;
 }
@@ -20,7 +20,7 @@ export default function Navbar({height = '5vh'}: NavbarProps) {
             <Twitter />
           </IconButton>
           <IconButton aria-label="Github" href="https://github.com/jebikoh">
-            <Github />
+            <Twitter />
           </IconButton>
         </Box>
       </Toolbar>
