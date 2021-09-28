@@ -1,11 +1,11 @@
 import * as React from 'react';
-import Section from './Components/Section';
+import Section from './components/Section';
 // MUI
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 //
-import ProjectList from './Components/ProjectList';
-import Project from './Components/Project';
+import ProjectList from './components/ProjectList';
+import Project from './components/Project';
 import projects from './../projects.json';
 
 const projectList: {

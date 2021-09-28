@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 // Homemade
 import theme from './theme';
-import Section from './Components/Section';
+import Section from './components/Section';
 
 export default function Contact() {
   return (

@@ -6,11 +6,11 @@ import Grid from '@mui/material/Grid';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 // Homemade
-import Title from './Components/Title';
-import Navbar from './Components/Navbar';
-import SmoothScrollButton from './Components/SmoothScrollButton';
+import Title from './components/Title';
+import Navbar from './components/Navbar';
+import SmoothScrollButton from './components/SmoothScrollButton';
 import theme from '../src/theme';
-import DownChevron from './Components/DownChevron';
+import DownChevron from './components/DownChevron';
 
 export default function Landing() {
   return (
