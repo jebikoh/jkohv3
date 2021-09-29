@@ -39,7 +39,7 @@ export default function Projects() {
           />
         </Grid>
         <Grid>
-          <ProjectList header="PESRONAL" projects={projectList['personal']} />
+          <ProjectList header="PERSONAL" projects={projectList['personal']} />
         </Grid>
       </Grid>
     </Section>
