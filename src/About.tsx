@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 // Homemade
 import theme from './theme';
-import Section from './Components/Section';
+import Section from './components/Section';
 
 export default function About() {
   return (
