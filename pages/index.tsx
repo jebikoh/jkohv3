@@ -9,7 +9,7 @@ import Projects from '../src/Projects';
 import Contact from '../src/Contact';
 
 export default function Index() {
-  const mobile = useMediaQuery('(max-width:400px');
+  const mobile = useMediaQuery('(max-width:430px');
   return (
     // {mobile ? }
     <>
