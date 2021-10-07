@@ -27,19 +27,16 @@ export default function Projects() {
           </Typography>
         </Grid>
         <Grid>
-          <ProjectList
-            header="PROFESSIONAL"
-            projects={projectList['primary']}
-          />
+          <ProjectList header="CATEGORY 1" projects={projectList['primary']} />
         </Grid>
         <Grid>
           <ProjectList
-            header="RECREATIONAL"
+            header="CATEGORY 2"
             projects={projectList['recreational']}
           />
         </Grid>
         <Grid>
-          <ProjectList header="PERSONAL" projects={projectList['personal']} />
+          <ProjectList header="CATEGORY 3" projects={projectList['personal']} />
         </Grid>
       </Grid>
     </Section>
