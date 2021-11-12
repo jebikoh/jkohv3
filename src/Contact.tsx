@@ -12,7 +12,7 @@ export default function Contact() {
     <Section id="contact" upChevron={true} upChevronTo="landing">
       <Grid container alignItems="center" spacing={1}>
         <Grid>
-          <Typography variant="h2">CONTACT</Typography>
+          <Typography variant="h4">CONTACT</Typography>
         </Grid>
         <Grid>
           <Typography style={{marginBottom: theme.spacing(4)}} variant="body1">
@@ -22,7 +22,7 @@ export default function Contact() {
             odio ut sem.
           </Typography>
           <Grid container direction="row">
-            <Typography variant="h3">EMAIL:</Typography>
+            <Typography variant="h5">EMAIL:</Typography>
           </Grid>
           <Grid>
             <Link href="mailto: jayden@jkoh.io">jayden@jkokh.io</Link>

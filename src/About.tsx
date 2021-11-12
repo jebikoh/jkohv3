@@ -11,7 +11,7 @@ export default function About() {
     <Section id="about" downChevron={true} downChevronTo="projects">
       <Grid container>
         <Grid>
-          <Typography variant="h2">ABOUT ME</Typography>
+          <Typography variant="h4">ABOUT ME</Typography>
         </Grid>
         <Grid>
           <Typography style={{marginBottom: theme.spacing(4)}} variant="body1">

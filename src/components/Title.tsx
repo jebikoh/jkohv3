@@ -2,11 +2,7 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-interface TitleProps {
-  scale?: number;
-}
-
-export default function Title({scale = 1}: TitleProps) {
+export default function Title() {
   return (
     <Grid
       container
@@ -16,32 +12,15 @@ export default function Title({scale = 1}: TitleProps) {
       alignItems="center"
     >
       <Grid item>
-        <Typography
-          style={{fontSize: `${22 * scale}vw`}}
-          variant="h1"
-          component="h1"
-        >
+        <Typography variant="h1" component="h1">
           JAYDEN
         </Typography>
-        <Typography
-          style={{fontSize: `${25 * scale}vw`}}
-          variant="h1"
-          component="h1"
-        >
+        <Typography variant="h2" component="h1">
           EDARA
         </Typography>
       </Grid>
       <Grid item>
-        <Typography
-          style={{
-            fontSize: `${8.7 * scale}vw`,
-            textAlign: 'center',
-            lineHeight: `${7.75 * scale}vw}`,
-          }}
-          variant="subtitle1"
-        >
-          JEBIKOH
-        </Typography>
+        <Typography variant="subtitle1">JEBIKOH</Typography>
       </Grid>
     </Grid>
   );
