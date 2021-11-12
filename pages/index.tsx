@@ -10,7 +10,7 @@ import Contact from '../src/Contact';
 import Section from '../src/components/Section';
 
 export default function Index() {
-  const mobile = useMediaQuery('(max-width:430px');
+  const mobile = useMediaQuery('(max-width:900px');
   return (
     // {mobile ? }
     <>
@@ -23,7 +23,7 @@ export default function Index() {
             sx={{fontSize: '0.25em', lineHeight: '2vh', textAlign: 'center'}}
             variant="body1"
           >
-            Currently only works on displays {'<'} 414px.
+            Currently only works on displays {'<'} 900px.
           </Typography>
           <Typography
             sx={{fontSize: '0.15em', lineHeight: '2vh', textAlign: 'center'}}
