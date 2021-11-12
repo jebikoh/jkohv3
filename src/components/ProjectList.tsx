@@ -18,6 +18,9 @@ const ProjectItemText = styled(ListItemText)({
   ':hover': {
     color: theme.palette.primary.main,
   },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: `${6 * theme.scale.sm}vw`,
+  },
 });
 
 const ProjectSubItemText = styled(ListItemText)({
@@ -41,7 +44,7 @@ export default function ProjectList({header, projects}: ProjectListProps) {
 
   return (
     <>
-      <List>
+      <List sx={{padding: '0vh', paddingTop: '1vh', paddingBottom: '1vh'}}>
         <ListItemButton sx={{textAlign: 'left'}} onClick={handleClick}>
           {!open ? (
             <>
@@ -53,14 +56,18 @@ export default function ProjectList({header, projects}: ProjectListProps) {
               <ProjectItemText disableTypography sx={{fontStyle: 'italic'}}>
                 {header}
               </ProjectItemText>
-              <ChevronLeft />
+              <ChevronLeft sx={{fontSize: '8vw'}} />
             </>
           )}
         </ListItemButton>
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List disablePadding sx={{paddingLeft: theme.spacing(4)}}>
             {projects.map(project => (
-              <ListItemButton component="a" href={project.link}>
+              <ListItemButton
+                id={project.name}
+                component="a"
+                href={project.link}
+              >
                 <ProjectSubItemText disableTypography>
                   {project.name}
                 </ProjectSubItemText>

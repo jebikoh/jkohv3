@@ -25,7 +25,9 @@ export default function Contact() {
             <Typography variant="h5">EMAIL:</Typography>
           </Grid>
           <Grid>
-            <Link href="mailto: jayden@jkoh.io">jayden@jkokh.io</Link>
+            <Link href="mailto: aedara@cs.washington.edu">
+              aedara@cs.washington.edu
+            </Link>
           </Grid>
         </Grid>
       </Grid>

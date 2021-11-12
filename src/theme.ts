@@ -40,7 +40,7 @@ const forerunner = createTheme({
     values: {
       xs: 0,
       sm: 400,
-      md: 900,
+      md: 600,
       lg: 1200,
       xl: 1536,
     },
@@ -75,6 +75,7 @@ const theme = createTheme({
   breakpoints: {
     values: forerunner.breakpoints?.values,
   },
+  scale: forerunner.scale,
   palette: forerunner.palette,
   typography: {
     fontFamily: [
@@ -116,11 +117,17 @@ const theme = createTheme({
       color: forerunner.palette.primary.main,
       fontStyle: 'italic',
       fontSize: '10vw',
+      [forerunner.breakpoints.up('sm')]: {
+        fontSize: `${10 * forerunner.scale.sm}vw`,
+      },
     },
     h5: {
       color: forerunner.palette.secondary.main,
       fontStyle: 'italic',
       fontSize: '6vw',
+      [forerunner.breakpoints.up('sm')]: {
+        fontSize: `${6 * forerunner.scale.sm}vw`,
+      },
     },
     // Vertical text
     subtitle1: {
@@ -141,6 +148,10 @@ const theme = createTheme({
       color: forerunner.palette.secondary.main,
       fontSize: '4.5vw',
       lineHeight: '5vw',
+      [forerunner.breakpoints.up('sm')]: {
+        fontSize: `${4.5 * forerunner.scale.sm}vw`,
+        lineHeight: `${5 * forerunner.scale.sm}vw`,
+      },
       textAlign: 'justify',
       textJustify: 'inter-character',
     },
@@ -225,6 +236,9 @@ const theme = createTheme({
           fontSize: '4.5vw',
           ':hover': {
             color: forerunner.palette.secondary.main,
+          },
+          [forerunner.breakpoints.up('sm')]: {
+            fontSize: `${4.5 * forerunner.scale.sm}vw`,
           },
         },
       },
