@@ -18,7 +18,6 @@ export default function Landing() {
       <Box sx={{height: '100vh', position: 'relative'}}>
         <Navbar />
         <Container
-          maxWidth="sm"
           style={{
             position: 'absolute',
             left: '50%',

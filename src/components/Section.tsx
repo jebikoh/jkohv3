@@ -29,7 +29,6 @@ export default function SectionContainer({
       <Box sx={{height: '100vh', position: 'relative'}}>
         {upChevron && <UpChevron to={upChevronTo} />}
         <Container
-          maxWidth="sm"
           style={{
             position: 'absolute',
             left: '50%',

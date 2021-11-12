@@ -17,7 +17,7 @@ export default function Projects() {
     <Section id="projects" downChevron={true} downChevronTo="contact">
       <Grid container direction="column">
         <Grid>
-          <Typography variant="h2">PROJECTS</Typography>
+          <Typography variant="h4">PROJECTS</Typography>
         </Grid>
         <Grid>
           <Typography variant="body1">
