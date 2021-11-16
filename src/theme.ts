@@ -40,7 +40,7 @@ const forerunner = createTheme({
     values: {
       xs: 0,
       sm: 400,
-      md: 600,
+      md: 900,
       lg: 1200,
       xl: 1536,
     },
@@ -64,7 +64,7 @@ const forerunner = createTheme({
     xs: 1,
     sm: 0.75,
     md: 0.5,
-    lg: 0.5,
+    lg: 0.25,
     xl: 0.5,
   },
 });
@@ -101,6 +101,12 @@ const theme = createTheme({
       [forerunner.breakpoints.up('sm')]: {
         fontSize: `${22 * forerunner.scale.sm}vw`,
       },
+      [forerunner.breakpoints.up('md')]: {
+        fontSize: `${22 * forerunner.scale.md}vw`,
+      },
+      [forerunner.breakpoints.up('lg')]: {
+        fontSize: `${22 * forerunner.scale.lg}vw`,
+      },
     },
     h2: {
       color: forerunner.palette.primary.main,
@@ -111,6 +117,12 @@ const theme = createTheme({
       [forerunner.breakpoints.up('sm')]: {
         fontSize: `${25 * forerunner.scale.sm}vw`,
       },
+      [forerunner.breakpoints.up('md')]: {
+        fontSize: `${25 * forerunner.scale.md}vw`,
+      },
+      [forerunner.breakpoints.up('lg')]: {
+        fontSize: `${25 * forerunner.scale.lg}vw`,
+      },
     },
     h4: {
       fontFamily: 'QanelasEB',
@@ -120,6 +132,12 @@ const theme = createTheme({
       [forerunner.breakpoints.up('sm')]: {
         fontSize: `${10 * forerunner.scale.sm}vw`,
       },
+      [forerunner.breakpoints.up('md')]: {
+        fontSize: `${10 * forerunner.scale.md}vw`,
+      },
+      [forerunner.breakpoints.up('lg')]: {
+        fontSize: `${10 * forerunner.scale.lg}vw`,
+      },
     },
     h5: {
       color: forerunner.palette.secondary.main,
@@ -127,6 +145,12 @@ const theme = createTheme({
       fontSize: '6vw',
       [forerunner.breakpoints.up('sm')]: {
         fontSize: `${6 * forerunner.scale.sm}vw`,
+      },
+      [forerunner.breakpoints.up('md')]: {
+        fontSize: `${6 * forerunner.scale.md}vw`,
+      },
+      [forerunner.breakpoints.up('lg')]: {
+        fontSize: `${10 * forerunner.scale.lg}vw`,
       },
     },
     // Vertical text
@@ -143,6 +167,14 @@ const theme = createTheme({
         fontSize: `${8.7 * forerunner.scale.sm}vw`,
         lineHeight: `${7.5 * forerunner.scale.sm}vw`,
       },
+      [forerunner.breakpoints.up('md')]: {
+        fontSize: `${8.7 * forerunner.scale.md}vw`,
+        lineHeight: `${7.5 * forerunner.scale.md}vw`,
+      },
+      [forerunner.breakpoints.up('lg')]: {
+        fontSize: `${8.7 * forerunner.scale.lg}vw`,
+        lineHeight: `${7.5 * forerunner.scale.lg}vw`,
+      },
     },
     body1: {
       color: forerunner.palette.secondary.main,
@@ -151,6 +183,14 @@ const theme = createTheme({
       [forerunner.breakpoints.up('sm')]: {
         fontSize: `${4.5 * forerunner.scale.sm}vw`,
         lineHeight: `${5 * forerunner.scale.sm}vw`,
+      },
+      [forerunner.breakpoints.up('md')]: {
+        fontSize: `${4.5 * forerunner.scale.sm}vw`,
+        lineHeight: `${5 * forerunner.scale.sm}vw`,
+      },
+      [forerunner.breakpoints.up('lg')]: {
+        fontSize: `${5 * forerunner.scale.lg}vw`,
+        lineHeight: `${5 * forerunner.scale.lg}vw`,
       },
       textAlign: 'justify',
       textJustify: 'inter-character',
@@ -167,6 +207,12 @@ const theme = createTheme({
           fontSize: `${6 * forerunner.scale.xs}vw`,
           [forerunner.breakpoints.up('sm')]: {
             fontSize: `${6 * forerunner.scale.sm}vw`,
+          },
+          [forerunner.breakpoints.up('md')]: {
+            fontSize: `${6 * forerunner.scale.md}vw`,
+          },
+          [forerunner.breakpoints.up('lg')]: {
+            fontSize: `${6 * forerunner.scale.lg}vw`,
           },
         },
       },
@@ -219,6 +265,24 @@ const theme = createTheme({
       },
     },
     MuiListItemText: {
+      styleOverrides: {
+        root: {
+          color: forerunner.palette.secondary.main,
+          fontSize: '6vw',
+          ':hover': {
+            color: forerunner.palette.primary.main,
+          },
+          [forerunner.breakpoints.up('sm')]: {
+            fontSize: `${6 * forerunner.scale.sm}vw`,
+          },
+          [forerunner.breakpoints.up('md')]: {
+            fontSize: `${6 * forerunner.scale.md}vw`,
+          },
+          [forerunner.breakpoints.up('lg')]: {
+            fontSize: `${6 * forerunner.scale.lg}vw`,
+          },
+        },
+      },
       defaultProps: {
         primaryTypographyProps: {
           fontSize: '6vw',
@@ -233,12 +297,18 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           color: forerunner.palette.accent.main,
-          fontSize: '4.5vw',
+          fontSize: '6vw',
           ':hover': {
             color: forerunner.palette.secondary.main,
           },
           [forerunner.breakpoints.up('sm')]: {
-            fontSize: `${4.5 * forerunner.scale.sm}vw`,
+            fontSize: `${6 * forerunner.scale.sm}vw`,
+          },
+          [forerunner.breakpoints.up('md')]: {
+            fontSize: `${6 * forerunner.scale.md}vw`,
+          },
+          [forerunner.breakpoints.up('lg')]: {
+            fontSize: `${6 * forerunner.scale.lg}vw`,
           },
         },
       },
@@ -249,11 +319,19 @@ const theme = createTheme({
     MuiAvatar: {
       styleOverrides: {
         root: {
-          width: `${30 * forerunner.scale.sm}vw`,
-          height: `${30 * forerunner.scale.sm}vw`,
+          width: `${30 * forerunner.scale.xs}vw`,
+          height: `${30 * forerunner.scale.xs}vw`,
           [forerunner.breakpoints.up('sm')]: {
             width: `${30 * forerunner.scale.sm}vw`,
             height: `${30 * forerunner.scale.sm}vw`,
+          },
+          [forerunner.breakpoints.up('md')]: {
+            width: `${30 * forerunner.scale.md}vw`,
+            height: `${30 * forerunner.scale.md}vw`,
+          },
+          [forerunner.breakpoints.up('lg')]: {
+            width: `${30 * forerunner.scale.lg * 1.25}vw`,
+            height: `${30 * forerunner.scale.lg * 1.25}vw`,
           },
         },
       },

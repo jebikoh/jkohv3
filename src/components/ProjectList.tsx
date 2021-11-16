@@ -12,14 +12,40 @@ import ChevronLeft from '@mui/icons-material/KeyboardArrowLeft';
 import theme from '../theme';
 import Project from './Project';
 
-const ProjectItemText = styled(ListItemText)({
-  color: theme.palette.secondary.main,
-  fontSize: '6vw',
-  ':hover': {
-    color: theme.palette.primary.main,
-  },
+// const ProjectItemText = styled(ListItemText)({
+//   color: theme.palette.secondary.main,
+//   fontSize: '6vw',
+//   ':hover': {
+//     color: theme.palette.primary.main,
+//   },
+//   [theme.breakpoints.up('sm')]: {
+//     fontSize: `${6 * theme.scale.sm}vw`,
+//   },
+// });
+
+const ReactiveChevronDown = styled(ChevronDown)({
+  fontSize: '8vw',
   [theme.breakpoints.up('sm')]: {
-    fontSize: `${6 * theme.scale.sm}vw`,
+    fontSize: `${8 * theme.scale.sm}vw`,
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: `${8 * theme.scale.md}vw`,
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: `${8 * theme.scale.lg}vw`,
+  },
+});
+
+const ReactiveChevronLeft = styled(ChevronLeft)({
+  fontSize: '8vw',
+  [theme.breakpoints.up('sm')]: {
+    fontSize: `${8 * theme.scale.sm}vw`,
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: `${8 * theme.scale.md}vw`,
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: `${8 * theme.scale.lg}vw`,
   },
 });
 
@@ -48,15 +74,15 @@ export default function ProjectList({header, projects}: ProjectListProps) {
         <ListItemButton sx={{textAlign: 'left'}} onClick={handleClick}>
           {!open ? (
             <>
-              <ProjectItemText disableTypography>{header}</ProjectItemText>
-              <ChevronDown sx={{fontSize: '8vw'}} />
+              <ListItemText disableTypography>{header}</ListItemText>
+              <ReactiveChevronDown sx={{fontSize: '8vw'}} />
             </>
           ) : (
             <>
-              <ProjectItemText disableTypography sx={{fontStyle: 'italic'}}>
+              <ListItemText disableTypography sx={{fontStyle: 'italic'}}>
                 {header}
-              </ProjectItemText>
-              <ChevronLeft sx={{fontSize: '8vw'}} />
+              </ListItemText>
+              <ReactiveChevronLeft sx={{fontSize: '8vw'}} />
             </>
           )}
         </ListItemButton>

@@ -26,7 +26,15 @@ export default function SectionContainer({
 }: Props) {
   return (
     <div id={id}>
-      <Box sx={{height: '100vh', position: 'relative'}}>
+      <Box
+        sx={{
+          height: '100vh',
+          position: 'relative',
+          [theme.breakpoints.up('lg')]: {
+            width: '50vw',
+          },
+        }}
+      >
         {upChevron && <UpChevron to={upChevronTo} />}
         <Container
           style={{

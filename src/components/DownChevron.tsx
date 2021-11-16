@@ -13,7 +13,12 @@ interface Props {
 export default function DownChevron({to}: Props) {
   return (
     <Container
-      style={{position: 'absolute', bottom: '2vh', textAlign: 'center'}}
+      style={{
+        position: 'absolute',
+        bottom: '2vh',
+        textAlign: 'center',
+        width: '100vw',
+      }}
     >
       <SmoothScrollButton to={to}>
         <IconButton size="large" aria-label="scroll-down">

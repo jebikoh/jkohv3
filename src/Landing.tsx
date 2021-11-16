@@ -36,8 +36,6 @@ export default function Landing() {
               <Avatar
                 style={{
                   backgroundColor: theme.palette.secondary.main,
-                  width: '30vw',
-                  height: '30vw',
                 }}
                 src="https://pbs.twimg.com/profile_images/1348803136740319234/As5ktbgz_400x400.jpg"
               />
