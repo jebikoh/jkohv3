@@ -30,9 +30,6 @@ export default function SectionContainer({
         sx={{
           height: '100vh',
           position: 'relative',
-          [theme.breakpoints.up('lg')]: {
-            width: '50vw',
-          },
         }}
       >
         {upChevron && <UpChevron to={upChevronTo} />}
@@ -43,6 +40,11 @@ export default function SectionContainer({
             top: '50%',
             transform: 'translate(-50%, -50%)',
             padding: theme.spacing(8),
+          }}
+          sx={{
+            [theme.breakpoints.up('lg')]: {
+              width: '50vw',
+            },
           }}
         >
           {children}
