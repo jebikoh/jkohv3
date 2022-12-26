@@ -62,7 +62,7 @@ const forerunner = createTheme({
   },
   scale: {
     xs: 1,
-    sm: 0.75,
+    sm: 0.65,
     md: 0.5,
     lg: 0.25,
     xl: 0.5,
@@ -124,6 +124,7 @@ const theme = createTheme({
         fontSize: `${25 * forerunner.scale.lg}vw`,
       },
     },
+    // H4: Header text (CAPS BLACK ITALIC)
     h4: {
       fontFamily: 'QanelasEB',
       color: forerunner.palette.primary.main,
@@ -150,7 +151,7 @@ const theme = createTheme({
         fontSize: `${6 * forerunner.scale.md}vw`,
       },
       [forerunner.breakpoints.up('lg')]: {
-        fontSize: `${10 * forerunner.scale.lg}vw`,
+        fontSize: `${6 * forerunner.scale.lg}vw`,
       },
     },
     // Vertical text
@@ -176,6 +177,7 @@ const theme = createTheme({
         lineHeight: `${7.5 * forerunner.scale.lg}vw`,
       },
     },
+    // body1: normal body text
     body1: {
       color: forerunner.palette.secondary.main,
       fontSize: '4.5vw',
@@ -189,7 +191,7 @@ const theme = createTheme({
         lineHeight: `${5 * forerunner.scale.sm}vw`,
       },
       [forerunner.breakpoints.up('lg')]: {
-        fontSize: `${5 * forerunner.scale.lg}vw`,
+        fontSize: `${4.5 * forerunner.scale.lg}vw`,
         lineHeight: `${5 * forerunner.scale.lg}vw`,
       },
       textAlign: 'justify',
@@ -248,6 +250,8 @@ const theme = createTheme({
       },
       defaultProps: {
         color: 'secondary',
+        disableFocusRipple: true,
+        disableTouchRipple: true,
         disableRipple: true,
       },
     },

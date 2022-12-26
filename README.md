@@ -4,13 +4,14 @@
 
 Personal website version 3.
 
+To start development server: `yarn dev`.
+
 ## To-Do
 
- - Media queries
- - Animations
- - Update projects section
+- Media queries
+- Animations
+- Update projects section
 
 ## Design
 
 ![Design Document](https://live.staticflickr.com/65535/51415788823_db09c13147_o.png)
-
